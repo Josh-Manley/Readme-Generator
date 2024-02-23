@@ -44,6 +44,6 @@
 
   Josh-Manley
 
-  Github link https://github.com/Josh-Manley
+  Github link - https://github.com/Josh-Manley
 
   joshmanley45@gmail.com
