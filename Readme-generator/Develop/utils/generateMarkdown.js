@@ -301,7 +301,7 @@ function generateMarkdown(data) {
   ## Questions
   Github username\n
   ${data.username}\n
-  Github link https://github.com/Josh-Manley\n
+  Github link - https://github.com/Josh-Manley\n
   ${data.email}
 `
 ;
