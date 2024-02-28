@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
@@ -7,6 +9,8 @@ function renderLicenseBadge(data) {
     return (`[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`)
   } else if (data.license === "The Unlicense") {
     return (`[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`)
+  } else {
+    return '';
   }
 }
 
@@ -261,9 +265,19 @@ function renderLicenseSection(data) {
   }
 }
 
+function writeLicenseFile (fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      console.log('Error:', err);
+    } else {
+      console.log('Complete');
+    }
+  })
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const renderlicense = renderLicenseSection(data);
+  // const renderlicense = renderLicenseSection(data);
   const renderBadge = renderLicenseBadge(data)
 
   return `
@@ -290,7 +304,7 @@ function generateMarkdown(data) {
   ${data.usage}
   <a id="license"></a>
   ## License
-  ${renderlicense}
+  Check license file for license info
   <a id="contributing"></a>
   ## Contributing
   ${data.contributing}
@@ -304,10 +318,10 @@ function generateMarkdown(data) {
   Github link - https://github.com/Josh-Manley\n
   ${data.email}
 `
-;
-}
+;}
 
 module.exports =  {
   renderLicenseSection,
-  generateMarkdown
+  generateMarkdown,
+  writeLicenseFile
 };

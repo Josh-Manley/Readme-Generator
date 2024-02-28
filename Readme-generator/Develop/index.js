@@ -69,6 +69,8 @@ function init() {
   inquirer.prompt(questions).then((answers) => {
   const markdownContent = generateMarkdown.generateMarkdown(answers);
   writeToFile('README.md', markdownContent)
+  const licenseContent = generateMarkdown.renderLicenseSection(answers);
+  generateMarkdown.writeLicenseFile('License', licenseContent);
 });
 }
 
