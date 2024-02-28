@@ -7,7 +7,7 @@ const fs = require('fs');
 const questions = [
     {
       type: 'title',
-      message: 'What is title of readme?',
+      message: 'What is the title of readme?',
       name: 'title'
     },
     {
