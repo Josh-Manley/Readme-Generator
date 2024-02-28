@@ -64,13 +64,24 @@ function writeToFile(fileName, data) {
   }
 )}
 
+// Create license file
+function writeLicenseFile (fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      console.log('Error:', err);
+    } else {
+      console.log('Complete');
+    }
+  })
+}
+
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
   const markdownContent = generateMarkdown.generateMarkdown(answers);
   writeToFile('README.md', markdownContent)
   const licenseContent = generateMarkdown.renderLicenseSection(answers);
-  generateMarkdown.writeLicenseFile('License', licenseContent);
+  writeLicenseFile('License', licenseContent);
 });
 }
 

@@ -265,16 +265,6 @@ function renderLicenseSection(data) {
   }
 }
 
-function writeLicenseFile (fileName, data) {
-  fs.writeFile(fileName, data, (err) => {
-    if (err) {
-      console.log('Error:', err);
-    } else {
-      console.log('Complete');
-    }
-  })
-}
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // const renderlicense = renderLicenseSection(data);
@@ -323,5 +313,4 @@ function generateMarkdown(data) {
 module.exports =  {
   renderLicenseSection,
   generateMarkdown,
-  writeLicenseFile
 };
