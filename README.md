@@ -16,6 +16,7 @@
 
   ## visual
   <img width="1710" alt="Readme generator" src="https://github.com/Josh-Manley/Readme-Generator/assets/150214190/15cb570b-eb8b-4e4d-93f1-135640fbbbfb">
+  
   <a id="installation"></a>
   ## Installation
   To install dependencies type "npm init" and "npm i --save inquirer@^8.2.4"
