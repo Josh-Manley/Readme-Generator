@@ -1,5 +1,3 @@
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   <a id="title"></a>
   # Readme Generator
   <a id="description"></a>
@@ -16,6 +14,8 @@
   * [Tests](#tests)
   * [Questions](#questions)
 
+  ##visual
+  <img width="1710" alt="Readme generator" src="https://github.com/Josh-Manley/Readme-Generator/assets/150214190/15cb570b-eb8b-4e4d-93f1-135640fbbbfb">
   <a id="installation"></a>
   ## Installation
   To install dependencies type "npm init" and "npm i --save inquirer@^8.2.4"
