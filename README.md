@@ -6,7 +6,7 @@
   ## Description
   You can quickly generate a Read me file in the command-line by using this application
   ## Link to video
-  file:///Users/joshmanley/Downloads/Readme%20Generator.webm
+  [file:///Users/joshmanley/Downloads/Readme%20Generator.webm](https://drive.google.com/file/d/19rdZXyJbVIDUhcYwrlKOM_8tmlldVnbx/view)
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
